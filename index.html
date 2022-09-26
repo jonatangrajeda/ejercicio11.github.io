@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        numEjerc = prompt("que ejercicio quiere realizar? (del 1 al 3)")
+        switch (numEjerc) {
+            case "1":
+                console.log("1er ejercicio");
+                let diaSemana = prompt("¿Qué día es hoy?");
+                diaSemana = diaSemana.toLowerCase();
+                if (diaSemana == "sabado") {
+                    diaSemana = "sábado";
+                }
+                switch (diaSemana) {
+                    case "lunes":
+                        alert("Hoy es lunes. Toca entrenar: Cuádriceps/gemelos (Mujer), Pecho/abs (Hombre)");
+                        break;
+                    case "martes":
+                        alert("Hoy es martes. Toca entrenar: Biceps/Triceps");
+                        break;
+                    case "miércoles":
+                        alert("Hoy es miércoles. Espalda/Abs (Mujer), Cuádriceps/femoral (Hombre)");
+                        break;
+                    case "jueves":
+                        alert("Hoy es jueves. Glúteo/femoral (Mujer), Espalda (Hombre)");
+                        break;
+                    case "viernes":
+                        alert("Hoy es viernes. Hombro/Abs (Mujer), Hombro/gemelos/abs (Hombre)");
+                        break;
+                    case "sábado":
+                        alert("Hoy es sábado. Pecho/Glúteo (Mujer). (Hombre) Este día lo dejamos para el grupo muscular que requiera mayor trabajo, hacer hincapié en músculo que requiera mayor desarrollo.");
+                        break;
+                    case "domingo":
+                        alert("Hoy es domingo. Asado");
+                        break;
+                    default:
+                        alert("Escribe un dia de la semana correctamente.");
+                }
+                break;
+            case "2":
+                console.log("2do ejercicio")
+                for (i = 20; i <= 70; i++) {
+                    document.write("El número es: " + i + "<br>");
+                }
+                break;
+            case "3":
+                console.log("3er ejercicio");
+                var numero = parseInt(prompt("Cuantas veces quiere que se repita el bucle?"));
+                while (numero != 0) {
+                    document.write("Hello World." + "<br>");
+                    numero--;
+                 }
+                break;
+            default:
+                alert("numero incorrecto");
+        }
+    </script>
+</body>
+
+</html>
